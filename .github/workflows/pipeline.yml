@@ -40,6 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: snyk/actions/python@master
+      - name: Escaneo SCA con Snyk (Bloqueo en High/Critical)
+        uses: snyk/actions/python@master
+        with:
+          args: --severity-threshold=high
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
