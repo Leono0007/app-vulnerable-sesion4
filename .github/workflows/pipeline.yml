@@ -29,8 +29,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.organization=TU_ORGANIZATION_KEY_CORRECTO
-            -Dsonar.projectKey=TU_PROJECT_KEY_CORRECTO
+            -Dsonar.organization=leono0007
+            -Dsonar.projectKey=leono0007_app-vulnerable-sesion4
             -Dsonar.sources=.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
